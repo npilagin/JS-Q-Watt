@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>JS Variables</title>
+   <script type="text/javascript">
+	 
+	 //Variables store values
+	 //Variables can have numbers, letters, or underscores
+	 //Variable names are CASE-SENSITIVE (myVar and MyVar are not the same !)
+	 //A number can't be the first character
+	 //Variables can not have spaces
+	 //No Javascript keywords (var, function, etc...)
+	 //A variable name is called an "identifier"
+	 
+	 //To declare a variable
+	   var myVariable;
+	 
+	 //Assigning a value to a variable
+	   myVariable = 20; // "=" is called an assignment operator
+	   
+	 //To print a variable on the screen
+       document.write(myVariable);  
+	 //This prints 20 because 20 was assigned to myVariable above
+
+     //To declare and assign a value to a variable at the same time
+     //This is called "initializing" a variable	
+       var myVariable = 20; 
+	 
+	 
+   </script>  
+
+</head>
+<body>
+
+</body>
+</html>
+
