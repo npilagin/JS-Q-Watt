@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>JS Operators</title>
+   <script type="text/javascript">
+	 
+	 /* Math Operators
+	   + Addition
+	   - Subtraction
+	   * Multiplication
+	   / Divsion
+	   % Modulus (This is the remainder left after division has been done (if there is one))
+	 */
+	 
+     var apples = 5;
+	   var pie = 3;
+	 
+	   var applepie = apples + pie; // 8
+	   var applepie = apples - pie; // 2
+	   var applepie = apples * pie; // 15
+	   var applepie = apples / pie; // 1.6666666666
+	   var applepie = apples % pie; // 2 (5 / 3 = 1 with a remainder of 2)
+	 
+	 // ++ Increment- Add 1
+	   var apples = 5;
+	   var pie = 3;
+	   var applepie = apples + pie;
+	   
+	   applepie++;
+	   
+	   document.write(applepie); // 9 (apples(5) + pie(3) incremented by ++ (1))
+	 
+	 // -- Decrement- Subtract 1
+	   var apples = 5
+	   var pie = 3;
+	   var applepie = apples + pie;
+	   
+	   applepie--;
+	   
+	   document.write(applepie); // 7 (apples(5) + pie(3) decremented by -- (1))
+	   
+	 /*Assignment Operators
+        = (Equals sign)- Assigns whatever is on the right, to the Variable on the left */
+	 
+	 //Compound Assignment Operators
+       
+	   /* += Compound addition operator- Takes the 2 variables, Adds them, 
+	      and Assigns them to the variable on the left */ 
+	   
+	    var apples = 5;
+	    var pie = 3;
+	   
+	    apples += pie;
+	   
+	    document.write(apples); // apples now equals 8
+	   
+	   /* -= Compound subtraction operator- Takes whats on the right, and SUBTRACTS it from, 
+	   and ASSIGNS it to the var on the left */
+	   
+	    var apples = 5;
+	    var pie = 3;
+	   
+	    apples -= pie;
+	   
+	    document.write(apples); // apples now equals 2
+		
+	   /* *= Compound multiplication operator- Takes the 2 variables, Multiplies them, and 
+	   Assigns them to the variable on the left */ 
+	   
+	    var apples = 5;
+	    var pie = 3;
+	   
+	    apples *= pie;
+	   
+	    document.write(apples); // apples now equals 15
+	   
+	   /* /= Compound division operator- Takes whats on the left, Divides it by 
+	     whats on the right, and Assigns it to the left */ 
+	   
+	    var apples = 5;
+	    var pie = 3;
+	   
+	    apples /= pie;
+	   
+	    document.write(apples); // apples now equals 1.66666666666 (5 divided by 3)
+	   
+   </script>  
+
+</head>
+<body>
+
+</body>
+</html>
