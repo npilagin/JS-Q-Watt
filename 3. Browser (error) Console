@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>Firefox Browser (error) Console</title>
+   <script type="text/javascript">
+	 
+	 /*The firefox browser (error) console is at shift+ctrl+j.
+	   Use it to help locate errors when something isn't running correctly. 
+	   It will tell you what and where is the problem*/
+	 
+	 document.write("Hello World </br>");
+	 
+	 document.write("Good bye World");
+   </script>  
+
+</head>
+<body>
+
+</body>
+</html>
