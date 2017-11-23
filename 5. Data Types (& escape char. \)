@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>JS Data Types</title>
+   <script type="text/javascript">
+	 
+	 //Data Types are the types of data we can store in a Variable
+	 
+	 //Integer- A whole number, no decimals, can be positive, or negative
+	   var userAge = 37;
+	     
+	 //Float- A number that has a decimal in it, can be positive or negative
+       var bookPrice = 39.95;	
+     
+     //String- text. Can be one word, or more, can have symbols, with "" quotes around it/them	 
+	   var userName = "Nick!!";
+	   
+	   /*Escape character- A "\" symbol used before a symbol you dont want the program to read 
+	     Used below to escape quotes inside quotes*/
+	   var status = "Billy Said \"I have an extra big toe!\""
+	 
+	 //Boolean- Only allowed to have 2 values, True or False   
+	   
+   </script>  
+
+</head>
+<body>
+
+</body>
+</html>
