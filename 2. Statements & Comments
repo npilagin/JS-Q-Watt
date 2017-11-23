@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>Statements & Comments</title>
+  
+  <script type="text/javascript">
+	 //This is single-line comment syntax
+	 
+	 /*This is multi-line
+	 comment syntax in JS (same as CSS)*/
+	 
+	 //Below (document.write()) is a statement (it ends with a ;)
+	 
+	 //You can include html tags inside the JS, and it will run (</br>)
+	 document.write("Hello World </br>");
+	 
+	 document.write("Good bye World");
+   </script>  
+
+</head>
+<body>
+
+</body>
+</html>
