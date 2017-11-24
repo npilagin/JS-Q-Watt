@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>JS Functions with Parameters</title>
+  <script type="text/javascript">
+  
+    /* Parameters are variables placed in the parentheses, Then we are free to use that variable within our function.
+     (Placeholders) Can be named almost anything you want. 
+	   A parameter is like declaring a Variable, without having to use the keyword var. 
+     It can then be used inside the function. 
+	   It has to be given a value when called. */
+  
+      function alertMessage(message){
+	    alert(message);
+	  }
+  
+      alertMessage("Hello");
+	   
+	   /* Now we can reuse this function as many times as we want, 
+	      by giving (message) a new value (inside the parentheses) when called*/
+	   
+	   alertMessage("Welcome to my website");
+	   
+	   alertMessage("Goodbye");
+	   
+  </script>  
+
+</head>
+<body>
