@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <title>JS Functions with Parameters</title>
-  <script type="text/javascript">
+<meta charset="utf-8"/>
+<title>JS Functions with Parameters</title>
+<script type="text/javascript">
   
     /* Parameters are variables placed in the parentheses, Then we are free to use that variable within our function.
      (Placeholders) Can be named almost anything you want. 
@@ -24,7 +24,7 @@
 	   
 	   alertMessage("Goodbye");
 	   
-  </script>  
+</script>  
 
 </head>
 <body>
