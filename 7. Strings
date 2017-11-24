@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <title>JS Strings</title>
+   <script type="text/javascript">
+	 
+	 // A String is text surrounded with "" quotes
+	 
+	   var name = "\"Nick\" is a guy";
+	 
+	 //String Concatenation (joining strings/sentences)
+	   //Javascript doesn't add spaces. Add them yourself (anywhere you want)
+	 
+	   var sentence1 = "My name is Nick.";
+	   var sentence2 = " I am 37 years old.";
+	 
+	   document.write(sentence1 + sentence2);
+	 
+	 //Or you can do this...
+	 
+	   var sentence1 = "My name is Nick.";
+	   var sentence2 = " I am 37 years old.";
+	   var combinedSentences = sentence1 + sentence2;
+	  
+       document.write(combinedSentences);
+	 
+	 //You can also concatenate a string and a number together
+	 
+	   var age = 20;
+	   
+	   document.write("Hello you are " + age + " years old."); 
+	       //Prints- Hello you are 20 years old.
+		   
+	 //Using html elements inside a string
+       document.write("<h1>Hello World</h1>");    	   
+	       //Place the html elements inside the quotes of the string !
+	 
+   </script>  
+
+</head>
+<body>
+
+</body>
+</html>
