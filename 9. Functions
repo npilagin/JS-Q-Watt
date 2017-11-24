@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>JS Functions</title>
+  <script type="text/javascript">
+  
+    /* Functions  
+	*/
+  
+      function makeAwesome(){
+	    alert("you are awesome");
+	  }
+	  
+	  makeAwesome(); 
+	  //This function is called as soon as the page opens because there is no event
+  
+  </script>  
+
+</head>
+<body>
+  <!-- This Function will be called when the "button" is clicked (event- onclick) -->
+    <!-- This <form> is inside the html <body> -->
+    
+  <form>
+	  <input type="button" value="click me" onclick="makeAwesome();">
+	</form>
+        <!-- Use the JS syntax when calling "makeAwesome();" -->
+	        
+</body>
+</html>
