@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Functions with Multiple Parameters</title>
+<script type="text/javascript">
+  
+    // Multiple parameters are seperated by a comma 
+  
+      // A function to add 2 numbers of your choosing
+      // The </br> is just so if we call it many times, eah starts on a new line.
+	  
+	  function addNumbers(num1, num2){
+	    var answer = num1 + num2; //The var "answer" is now holding the value of the 2 added numbers
+		  document.write (answer + "</br>"); 
+	  }
+	   
+	   addNumbers(2,4); //This prints out 6 on the screen.
+	   addNumbers(5,100); // prints out 105 under the 6
+	   addNumbers(1001, 1002); //prints out 2003 under the 105
+</script>  
+
+</head>
+<body>
