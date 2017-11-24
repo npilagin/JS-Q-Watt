@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>JS Events</title>
+  <script type="text/javascript">
+  
+    /* Events- Running the code only after a user action to make 
+	   something happen on the page*/
+  
+    // Check the internet for a list of events (W3)
+	  
+
+    //With no event listed, this alert will pop us when the page opens	  
+	alert("Hello !"); 
+  
+  </script>  
+
+</head>
+<body>
+
+  <!-- This is inside the html <body>, not the <script> tags -->
+
+  <!-- ONCLICK -->
+  <!-- This form will make the button that handles the event 
+       The javascript is inside the "onclick" parentheses
+		   When the button is clicked, the alert will pop up -->
+      
+	  <form>
+	    <input type="button" value="click me" onclick="alert('You clicked me');"/> 
+	  </form>
+
+	<!-- ONMOUSEOVER -->
+	<!-- When the user hovers the mouse over the button, the alert will pop up -->
+	
+	  <form>
+	    <input type="button" value="hover mouse over me" onmouseover="alert('You hovered over me');"/> 
+	  </form>
+	
+</body>
+</html>
