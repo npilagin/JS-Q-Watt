@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS If...Else Statements </title>
+<script type="text/javascript">
+  
+  /*If...Else Statements test if a certain condition is 'true' 
+     and runs the code. If it isn't (else), 
+	   then it will do something else (run a different code after the 'else')
+  */
+ 
+   var age = 15;
+	
+	  if (condition){
+        // run this code if (condition) is 'true'	 
+	 }
+	  else{
+	    // run this code if (condition) is 'false'
+      }
+
+
+    var age = 15;
+     
+      if(age>=18){      //Since the condition is False, this code will NOT execute
+	    document.write("Welcome to the casino!");
+	  }	 
+	  else{      //This code will execute instead
+	    document.write("You are too young!");
+	  }
+	  
+	  
+	  var age = 21;
+     
+      if(age>=18){      //This condition is True, this code WILL execute
+	    document.write("Welcome to the casino!");
+	  }	 
+	  else{      //This code will be ignored by the program
+	    document.write("You are too young!");
+	  } 
+	  
+	//Else If 
+	  //Else If allows for the testing of more than just the 2 conditions
+	    /* In this example, the users age is 17. If the user is 18+, then 'Welcome to the casino'
+	    will print on the screen. However if the user is 17, 16, or 15, a specialized Alert will 
+		  pop up on the screen with a specific message for each age. If -15, the else statement
+      will run and print 'You are too young'.	 
+	    */
+	  
+	var age = 17;
+     
+    if(age>=18){      //This condition is False, this code will not execute
+	    document.write("Welcome to the casino!");
+	  }
+    else if(age==17){      //This condition is True, this code WILL execute
+	    alert("Only 1 more year!");	
+	  }	  
+	  else if(age==16){      //This condition is False, this code will not execute    
+	    alert("2 years to go!");
+	  }
+	  else if(age==15){       //This condition is False, this code will not execute           
+	    alert("3 years to go!");
+	  }
+	  else{      //This code will be ignored by the program
+	    document.write("You are too young!");
+	  } 
+	  	  
+	  
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
