@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Arrays</title>
+<script type="text/javascript">
+  
+  // Arrays are Variables that we use to store multiple values under one var name
+    
+    //This is called 'Declaring' & 'Initializing' an Array
+      //Each item in the array is called an 'Element'
+	
+    var carArray = ["honda", "toyota", "jaguar", "kia", "hyundai"];
+	
+	  document.write(carArray); //This prints honda,toyota,jaguar,kia,hyundai
+	  
+	
+	//To print only a certain array element (Remember the 1st number is Zero !)
+	 
+    var carArray = ["honda", "toyota", "jaguar", "kia", "hyundai"];
+	  
+	    //The number inside the square brackets is called an array index
+    document.write(carArray[2]); //This prints jaguar	  
+	
+---------------------------------------------------------------------------------------------------
+	
+  //What if you dont know what the elements in the array are going to be ?
+    //What if the user has to fill them in later?
+	
+   //In this array, i want to set aside 5 spaces, so the user can fill in 5 cars
+    var carArray = [5];
+	
+      //User filled these in to make the array
+	carArray[0]="mazda";
+	carArray[1]="toyota";
+	carArray[2]="nissan";
+	carArray[3]="kia";
+        carArray[4]="honda";
+	  
+	  
+   //What if the user didn't have a limit. He could fill in as many elements as he wanted ?
+     var carArray = [];
+      	
+      //The array will keep updating it's number until the user is finished adding to it
+	carArray[0]="mazda";
+	carArray[1]="toyota";
+	carArray[2]="nissan";
+	carArray[3]="kia";
+	carArray[4]="honda";
+	carArray[5]="bmw";
+	carArray[6]="mercedes";
+	carArray[7]="ford";
+	  
+    //But now how do we keep track of how many elements are in the array?
+      //The Length Property- counts how many elements are in the array
+	     
+     //To use the .length property
+        document.write(carArray.length); //This will print 8
+	  	
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
