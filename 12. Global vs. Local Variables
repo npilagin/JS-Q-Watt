@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Global & Local Variables</title>
+<script type="text/javascript">
+  
+  //Variable Scope (Global vs. Local)
+    
+   //GLOBAL Variables are declared outside a function, and can be used anywhere in your code.
+     //Don't use Global variables unless needed. It is bad form and could cause problems.
+	 
+	 
+     var champion="fizz"; // Global variable
+      
+      function printChampion(){
+	      document.write(champion + " inside function </br>");
+	  }	  
+	     //call the function
+	   printChampion();
+	   
+	   document.write(champion + " outside function </br>");
+	   
+	     /* The result here will be:
+	    
+		  fizz inside function
+		  fizz outside function
+		
+		  Both will print on the screen. 
+		  Why? because the variable 'champion' (fizz) was declared outside the
+		  function 'printChampion', and is GLOBAL.
+		  */
+	
+      /* LOCAL Variables are declared inside the body of the function, and can
+	       only be used in that function*/
+	   
+	  function printChampion(){
+	    var champion="fizz"; // Local variable
+		    document.write(champion + " inside function </br>");
+	  }	  
+	    
+       //call the function (you call it anywhere, but it won't run outside code with it)
+     printChampion();
+	   
+	   document.write(champion + " outside function </br>");
+	
+       /* The result here will be:
+	   
+	     fizz inside function
+       
+	     Only the code inside the function will print on the screen. 
+	     Why? because the variable 'champion' (fizz) was declared inside the
+       function 'printChampion', and is LOCAL.
+	     */
+	
+</script>  
+
+</head>
+<body>
+</html>
