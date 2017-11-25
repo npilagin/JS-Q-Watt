@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS If Statements</title>
+<script type="text/javascript">
+  
+  /* If Statements give the computer a test/condition to check. 
+  If the test/condition evaluates to 'True', it will rexecute the code.
+  If the statement evaluates to 'False', it will skip that code,
+    and move on to the next code on the page as if nothing happened.
+  */
+  
+  if (condition){  //If the condition in the parentheses evaluates to 'True', run the code in the {}
+	  //run the code here if (condition) is 'True'
+	}  
+	
+	/*Remember the == (double equals sign) actually means 'equals' in JS.
+	  The single equals sign (=) is always read as the assignment operator. */
+	
+  //In this statement, NOTHING will print because var "thursday does not equal "friday"
+	
+	 var day = "thursday";
+	
+	  if (day =="friday){      
+	    document.write("It's friday");
+	  }
+  
+  //In this statement, the code WILL execute because var 'friday' == 'friday'.
+    //It's friday will print on the screen.
+    
+	 var day = "friday";
+	
+	  if (day =="friday"){
+	    document.write("It's friday"); 
+    }
+	  
+     var age = 17;
+	
+	  if (age <= 18){       //"<=" is 'greater than, or equal to'
+	    document.write("Yay it's true"); 
+    }
+  
+     var age = 17;
+	
+	  if (age != 18){       // "!=" is 'NOT equal to'
+	    document.write("Yay it's true");       //This code will execute because they are NOT equal
+    }
+	 
+	 
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
