@@ -7,7 +7,7 @@
   
   // Arrays are Variables that we use to store multiple values under one var name
     
-	//This is called 'Declaring' an Array
+	//This is called 'Declaring' & 'Initializing' an Array
 	//Each item in the array is called an 'Element'
 	
     var carArray = ["honda", "toyota", "jaguar", "kia", "hyundai"];
