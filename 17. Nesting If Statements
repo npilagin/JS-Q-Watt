@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Nesting If Statements</title>
+<script type="text/javascript">
+  
+  /*Nesting If Statements- Putting and If statement inside another if statement,
+    so the condition will have to pass more than one test before it executes */
+     
+  /*Imagine you are having a competition, and the entrant had to be 
+	between 18 & 30 to enter. We can use 2 if statements nested inside 
+	each other to ensure that both the +18 & -30 conditions are met*/
+	
+	//This is just the 2 'if stmnts' nested
+	
+	var age = 21;
+	var maxAge = 30;
+	var minAge = 18;
+	
+	if (age >= minAge){    //This curly bracket ends 4 lines down
+	  if (age<= maxAge){    //This curly bracket ends 2 lines down
+	    document.write("You meet the requirements");
+	  }
+	}
+	  
+	//This is the 2 nested 'if stmnts' with an else condition for those not in the range
+      //SYNTAX: The second 'if stmnt' and the 'else' are inside the curly brackets of the first 'if stmnt'
+	
+  var age = 21;
+	var maxAge = 30;
+	var minAge = 18;
+	
+	if (age >= minAge){    //This curly bracket ends 7 lines down
+	  if (age<= maxAge){    //This curly bracket ends 2 lines down
+	    document.write("You meet the requirements");
+	  }
+	  else{    //This curly bracket ends 2 lines down
+	    document.write("You are the wrong age");
+	  }  
+	}	
+	  
+	  
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
