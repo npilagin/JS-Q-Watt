@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Complex Conditions</title>
+<script type="text/javascript">
+  	
+  // && (and Operator) and || (or Operator)
+	
+   // && (and Operator)	
+	
+   //This is another way to check for multiple conditions (other than nested 'if stmnts')  
+	 
+   var firstName = "Nick";
+	 var lastName = "Pilagin";
+	
+	 /*We want to check if BOTH conditions are true. 
+	   For this we put both conditions inside separate parentheses, and use the && operator
+	   to make sure the computer checks for both conditions */
+	  
+	    /*SYNTAX 
+		if ((condition) && (condition)) {
+		Code here;
+		}
+	    */
+	  
+	  //In the below example, both conditions are true, so the code will run
+		 //If either or both weren't true, the code wouln't run
+	  
+	 if((firstName == "Nick") && (lastName == "Pilagin")){
+	   document.write("Hello Nick Pilagin");
+	 }
+    
+    //You can test for as many conditions as you want this way
+	   //This will print the document.write because all 3 conditions are true
+	   
+	  var firstName = "Nick";
+	  var middleName = "Peter";
+	  var lastName = "Pilagin";
+	 
+	 
+	  if((firstName == "Nick") && (lastName == "Pilagin") && (middleName == "Peter")){
+	   document.write("Hello Nick Pilagin");
+	  }
+	 
+	 // || (or Operator)
+      
+	  // you can use || to check multiple conditions, but only one has to be true
+
+    var firstName = "Allan";
+	var lastName = "Nguyen";
+	 
+	 //This will print because one of the two conditions is true
+	 
+	  if((firstName == "Allan") || (lastName == "Pilagin")){
+	   document.write("Hello Allan");
+	  }  
+	 
+	  // || will also work if both conditions are true
+     //Like the and operator, it will run if one of 3+ conditions is true also
+    	
+	
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
