@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Switch Statements</title>
+<script type="text/javascript">
+  	
+/* Switch Statements check for conditions and executes code depending
+   on what conditions are met. It does this in a more efficient way than 
+   using many many 'if' statements if there a lot of conditions to check  
+*/	
+
+/* SYNTAX
+     switch (variable){
+       case "condition":
+	     Run Code
+		 break;
+   }
+*/
+	
+//COLON : instead of semicolon at the end of each case condition !
+  // break; will make the program stop running one it finds the right condition
+	
+//This statement will print 'yo honda'	
+	
+  var car = "honda";
+  
+    switch(car) {
+	  case "ford":
+	    document.write("ford huh");
+		break;
+	  case "honda":
+	    document.write("yo honda");
+		break;
+	  case "chevy":
+	    document.write("hi chevy");
+		break;
+	  default:    // This is in case none of the conditions are met
+	    document.write("none of the above i see");
+	}
+	
+/*This statement will print 'none of the above i see', because none of the conditions were met,
+so it ran the DEFAULT statement 
+*/    
+	
+  var car = "dodge";
+  
+    switch(car) {
+	  case "ford":
+	    document.write("ford huh");
+		break;
+	  case "honda":
+	    document.write("yo honda");
+		break;
+	  case "chevy":
+	    document.write("hi chevy");
+		break;
+	  default:    // In case none of the conditions are met
+	    document.write("none of the above i see");
+	}
+  
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
