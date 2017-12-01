@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Do While Loops</title>
+<script type="text/javascript">
+
+/* Do While Loop- If you want your code to run at least once before even
+   checking if the condition is true or false. It will run, then check,
+   then run more if true, or stop if false.
+*/
+
+/* SYNTAX
+
+  do{
+    code to run;
+	  increment/decrement amount
+  }while(condition);
+
+*/
+
+
+/*  
+  var counter = 1;    
+	
+	do{    // Run this code once initially
+	   document.write("This is iteration " +counter+ "</br>"); // Code to run
+	   counter++    // Increment amount
+	 }while(counter <= 10);   //As long as counter is <= 10
+*/
+
+/*
+This is the result of this 'do while loop'
+   
+This is iteration 1
+This is iteration 2
+This is iteration 3
+This is iteration 4
+This is iteration 5
+This is iteration 6
+This is iteration 7
+This is iteration 8
+This is iteration 9
+This is iteration 10
+*/  
+
+
+  var counter = 11;    
+	
+	do{    // Run this code once initially
+	   document.write("This is iteration " +counter+ "</br>"); // Code to run
+	   counter++    // Increment amount
+	  }while(counter <= 10);   //As long as counter is <= 10 (It isn't, it's 11)
+	
+ /*
+In this do while loop, the condition is false before anything is even checked
+but the do while loop will still run once before the condition is checked
+
+This is iteration 11
+*/	
+	
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
