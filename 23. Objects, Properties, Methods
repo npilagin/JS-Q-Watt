@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Objects, Properties, & Methods</title>
+<script type="text/javascript">
+
+/* 
+   Objects are containers for values called Properties & Methods
+ 
+   Properties are what an Object has (name, size, color, age, etc...)
+ 
+   Methods are what an Object does (actions that can be performed on Objects)
+*/
+
+
+  var x = "My name is Nick";   // This (x) is the OBJECT
+       
+    document.write(x.length);   // .length is a property (how many characters does it have)
+
+// Result~ 15	
+	
+  
+  
+  var x = "My name is Nick";
+    
+	 var capitals = x.toUpperCase();  // .toUpperCase() is a method (change characters to upperCase)
+	
+    document.write(capitals);  
+	
+// Result~ MY NAME IS NICK	
+	
+	
+	
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
