@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS For Loops</title>
+<script type="text/javascript">
+
+/* For Loops-  Use a for loop when you already know how many times you want
+               the loop to run
+
+*/
+
+/* SYNTAX
+   
+    for (start statement; end statement (condition); increment amount;){
+	  Run this code;
+	}
+*/
+
+
+  for (i=0; i<=10; i++) {   //The var 'i' starts at 0, ands at 10, and increments by 1
+    document.write("This loop ran "+ i +" times </br>");
+  }  
+
+/*
+This is the result of the loop
+
+This loop ran 0 times
+This loop ran 1 times
+This loop ran 2 times
+This loop ran 3 times
+This loop ran 4 times
+This loop ran 5 times
+This loop ran 6 times
+This loop ran 7 times
+This loop ran 8 times
+This loop ran 9 times
+This loop ran 10 times 
+*/   
+
+   
+</script>  
+
+</head>
+<body>
+
+</body>
+</html>
