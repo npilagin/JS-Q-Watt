@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Referencing Elements</title>
+<script type="text/javascript">
+
+  /* 
+    Using document.getElementById() will find the element id 
+    in the parentheses, and perform the action we specify 
+  */
+  
+  
+  document.getElementById("paragraph"); // This looks for the id 'paragraph' in the html body
+  
+  
+  /*-The function 'change()' will run onclick
+    -The var 'para' will be assigned the html id that has been pulled
+    -Then the var that we just pulled from the html will run the .innerHTML
+    -The '.innerHTML' is what's between the tags. In this case, 'Click Me'
+    -The .innerHTML will be changed to the text we specified and assigned to 'para'
+  */	
+	
+    function change(){
+      var para = document.getElementById("paragraph");
+	   para.innerHTML = "Clicked !";  
+    }
+----------------------------------  
+ start video 24 at 6:55 
+  --------------------------------
+</script>  
+
+</head>
+<body>
+
+<!-- The onClick id is going to call the function change() -->
+
+  <p id="paragraph" onClick="change();"> Click Me </p>
+
+
+<!-- The result is that, when clicked, the text 'Click Me', will change to 'Clicked -->
+
+</body>
+</html>
