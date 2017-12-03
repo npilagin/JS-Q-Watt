@@ -22,12 +22,11 @@
   */	
 	
     function change(){
-      var para = document.getElementById("paragraph");
+      var para = document.getElementById("para");
 	   para.innerHTML = "Clicked !";  
     }
-----------------------------------  
- start video 24 at 6:55 
-  --------------------------------
+
+
 </script>  
 
 </head>
@@ -38,7 +37,7 @@
   <p id="paragraph" onClick="change();"> Click Me </p>
 
 
-<!-- The result is that, when clicked, the text 'Click Me', will change to 'Clicked -->
+<!-- The result is that, when clicked, the text 'Click Me', will change to 'Clicked ! -->
 
 </body>
 </html>
