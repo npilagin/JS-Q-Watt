@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Changing Images onclick</title>
+<script type="text/javascript">
+
+
+// To change an image to another by clicking on it
+ 
+  /*The first example will swap one image for another one time, then it's done
+    The function 'change()' will change the .src property of the var 'image'
+  */
+  
+   function change(){
+     var image = document.getElementById("social");  // The var image will reference the html id "social"   
+	 image.src = "https://78.media.tumblr.com/5ebd559984092c158aafbfd6460f70ce/tumblr_p02xz5rY4h1wed1zeo1_540.jpg";
+   }  // .src is a property. We are changing it to the new link. image is the var we are referencing from above
+ 
+ -----------------------------------------------------------------------------------------------------------
+ 
+ // This function will use an if/else statement to switch images back & forth when clicked
+ 
+ var imageTracker = "cf5";  // First we start with a var that is equal to the name of the first image 
+ 
+   function change(){
+     var image = document.getElementById("social");  //The var image will reference the html id "social"
+	 if(imageTracker == "cf5"){  // if imageTracker is equal to the first image (cf5), the code below will change it to the other
+	     image.src = "https://78.media.tumblr.com/5ebd559984092c158aafbfd6460f70ce/tumblr_p02xz5rY4h1wed1zeo1_540.jpg";
+		   imageTracker = "5eb";   // After it has changed, we need to reset the var, and give it a new name, so the else statement will work
+	 }else{  // if imageTracker is equal to this image (5eb), the code below will change it back to the first
+	     image.src = "https://78.media.tumblr.com/cf5189642494af86426ec4ae21a9af17/tumblr_p031x7wIyv1wed1zeo1_540.jpg";
+		   imageTracker = "cf5";  // Again, after it has changed back, we need to reset the var back again so the if stmnt can run
+	 }
+   }
+ 
+ 
+
+</script>
+</head>
+<body>
+
+  
+<!-- This is the image in html with the 'onclick' attriblte set to run the function 'change();' 
+     The set up is normal img except for adding the 'onclick' attribute -->
+
+  <img src="https://78.media.tumblr.com/cf5189642494af86426ec4ae21a9af17/tumblr_p031x7wIyv1wed1zeo1_540.jpg" alt="cf5" id="social" onclick="change();">
+
+
+
+</body>
+</html>
