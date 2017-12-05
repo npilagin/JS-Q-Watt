@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Forms</title>
+<script type="text/javascript">
+
+
+/* Forms
+    Forms are created in html
+    The user interaction is created with a JS function
+	This form will start with an empty <p>, that will display a message 
+	 after the user has filled out his part of the form.
+*/
+  
+  function writeName(){
+    var welcomePara = document.getElementById("welcome");   // This stores the <p> in a variable for use by JS    
+    var name = document.getElementById("name");  // This stores the <input> in a variable for use by JS
+    
+	welcomePara.innerHTML = "welcome " + name.value; // .innerHTML is what's written in the <p> 
+  }    // .value is a property that gets what's written in the "name" input on the form. 
+
+
+ 
+
+</script>
+</head>
+<body>
+
+<!-- Form html (inside the <form> tags) -->
+  <!-- <p> is empty because user will supply the text -->
+  <!-- Simple form with a space to enter a name (input type="text"), and a button underneath (input type="button") -->
+
+  <p id="welcome"> </p>  <!-- id "welcome" is to reference in JS function -->
+  <form>
+    What is your name:<input type="text" id="name" /></br>  <!-- id "name" is to reference in JS function -->
+	<input type="button" value="done" onclick="writeName();"/>  <!-- onclick, run the function 'writeName' - "value" is text in button -->
+  </form>  
+  
+
+
+
+</body>
+</html>
+
+
+
+
