@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title> JS Form Validation </title>
+<script type="text/javascript">
+
+/* Validating Forms
+*/
+
+    function checkInfo(){
+	  var username = document.getElementById("username").value;
+	  var password = document.getElementById("password").value;
+	
+	  if(username=="" || password==""){
+	    alert("Please fill in all fields");
+		return false;   // This tells the 'return' after 'onsubmit' not to move forward
+	  }
+	  else{
+	    return true;  // This tells the 'return' after 'onsubmit' to submit and go forward
+	  } 
+	}
+
+// var username & password will store the user submission (.value)
+/* The empty string "" is used to represent that the user didn't fill any data in the input box
+    The user has to put SOMETHING in those boxes so it can be submitted & stored as uname & pword */  
+// The symbol || is the same as the word "OR" (username || password = username or passowrd)
+/* If the user doesn't fill in any data in either of the fields, an alert box will pop up
+    and tell the user to "Please fill in all fields" */
+// "return false" does not allow the submission, because the 'return' after 'onsubmit' will only accept 'true'
+/* Else (inputs filled) "return true" lets the user move forward to the next step
+    In this case that just means the 'submit form data' page  */
+ 
+ 
+</script>  
+</head>
+<body>
+
+<!-- Use the "onsubmit" event to return a function that makes sure the user has
+      filled in all the necessary inputs.
+     We use "return" because this reads that if the return is 'false' in the JS,
+	    it will not allow the submission 	 
+     The return after onsubmit is necessary to evaluate the true or false from the JS 
+-->
+  
+  <form action="submitted form data.html" method="post" onsubmit="return checkInfo();">
+    username: <input type="text" name="username" id="username"/>
+	  password: <input type="password" name="password" id="password"/>
+	  <input type="submit" value="login"/>
+  </form>
+
+
+</body>
+</html>
