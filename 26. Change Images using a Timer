@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>JS Using a Timer to Change Images</title>
+<script type="text/javascript">
+
+// Most of this code is the same from Lesson 25, adjusted a bit
+
+  // This function will use an if/else statement to switch images back & forth
+ 
+  var imageTracker = "cf5";  // First we start with a var that is equal to the name of the first image 
+ 
+   function change(){
+     var image = document.getElementById("social");  //The var image will reference the html id "social"
+	 if(imageTracker == "cf5"){  // if imageTracker is equal to the first image (cf5), the code below will change it to the other
+	     image.src = "https://78.media.tumblr.com/5ebd559984092c158aafbfd6460f70ce/tumblr_p02xz5rY4h1wed1zeo1_540.jpg";
+		   imageTracker = "5eb";   // After it has changed, we need to reset the var, and give it a new name, so the else statement will work
+	 }else{  // if imageTracker is equal to this image (5eb), the code below will change it back to the first
+	     image.src = "https://78.media.tumblr.com/cf5189642494af86426ec4ae21a9af17/tumblr_p031x7wIyv1wed1zeo1_540.jpg";
+		   imageTracker = "cf5";  // Again, after it has changed back, we need to reset the var back again so the if stmnt can run
+	 }
+    }
+ 
+ 
+/* setInterval(); Method   // clearInterval(); Method also 
+    SYNTAX
+	  setInterval("Code to run", Time between changes in milliseconds);
+*/
+
+    var timer = setInterval("change()", 2000);  
+ 
+ // If we want to stop the timer, use clearInterval();
+ 
+   // clearInterval(timer); // The arguement is just the name of the timer var
+
+ 
+ 
+</script>  
+</head>
+<body>
+
+
+<!-- This is the image in html with the 'onclick' attriblte set to run the function 'change();' 
+     The set up is normal img except for adding the 'onclick' attribute -->
+
+  
+  <img src="https://78.media.tumblr.com/cf5189642494af86426ec4ae21a9af17/tumblr_p031x7wIyv1wed1zeo1_540.jpg" alt="cf5" id="social" onclick="change();">
+
+
+<!-- Use clearInterval(); to stop the timer/changes onclick in html 
+  Remove comment tags to use
+
+  <img src="https://78.media.tumblr.com/cf5189642494af86426ec4ae21a9af17/tumblr_p031x7wIyv1wed1zeo1_540.jpg" alt="cf5" id="social" onclick="clearInterval(timer);">
+
+-->
+
+
+
+
+
+</body>
+</html>
