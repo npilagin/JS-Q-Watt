@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title> JS Submitting Forms </title>
+<script type="text/javascript">
+
+/* Submitting Forms
+*/
+
+
+
+ 
+ 
+</script>  
+</head>
+<body>
+
+<!-- There are 2 attributes EVERY form must have:
+     1. Action- Where do i want to send the info i get from the form ?
+	       This will usually be to a page written in a 'server-side' code (xxxx.php)
+		      This .php page will collect & save the data to a database
+	 
+   2. Method- How do we want to send the collected data to the 'server-side' page
+
+        <form action="xxxxx.php" method="get"> </form>	 
+--> 
+
+<!-- Once the username & password fields are filled and the login(submit) button
+     are clicked, the user info goes to "another_page.php" for collection and saving.
+     
+	   The "get" method actually does the sending of info to the url (another_page.php) 
+-->
+
+  <form action="another_page.php" method="get">
+    username: <input type="text" name="username"/>
+	  password: <input type="password" name="password"/>
+	  <input type="submit" value="login"/>
+  </form>
+
+  
+<!-- The "post" method will send the information to the server without the information showing in the url
+     Post is the more secure method. Better for sending passwords, etc...
+-->
+  
+  <form action="another_page.php" method="post">
+    username: <input type="text" name="username"/>
+	  password: <input type="password" name="password"/>
+	  <input type="submit" value="login"/>
+  </form>
+
+
+
+</body>
+</html>
+
+
