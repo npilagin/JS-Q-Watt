@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title> JS Form Validation (Radio Buttons) </title>
+<script type="text/javascript">
+
+/* Form Validation (Radio Buttons)
+    This checks if a radio button has been checked or not.
+    A Radio Button is used if only a 'yes' or 'no' answer is required.
+*/
+ 
+   /* After the html 'form' is written, we need to make a function that 
+      checks if one of the radio buttons has been selected
+   */
+
+// .checked is a property that will return 'true' if an input has been checked, 'false' if  not
+  // If 'yes' was checked on the form, then var 'yesChecked' will = 'true' & 'noChecked' will = 'false'
+  // If 'no' was checked on the form, then var 'noChecked' will = 'true' & 'yesChecked' will = 'false'
+  
+    
+	function isChecked(){
+	  var yesChecked = document.getElementById("autoRenewYes").checked;
+	  var noChecked = document.getElementById("autoRenewNo").checked;
+	  if (yesChecked == false && noChecked == false){
+	    alert("Please select an option");
+		return false;
+	  }else{
+	    return true;
+	  }
+	}
+   
+/* The 'if' statement
+    If both variables 'yesChecked' && (and) 'noChecked' are checked, and the user just hits 'submit' without
+	  choosing yes or no, an alert will pop up to remind the user to choose.
+	As part of the 'if' statement, there needs to be a 'return' statement, either true or false.
+      The returns will sync up with the 'return' in the 'onsubmit' in the html. 
+	  It has to register true to be able to submit.	  
+*/
+
+   
+ 
+</script>  
+</head>
+<body>
+
+<!-- onsubmit="return isChecked();" 
+     The word "return" is used to 'return' the value from the function 'isChecked()'
+-->
+
+
+  
+  <form action="submitted form data.html" method="post" onsubmit="return isChecked();">
+    <p>Do you want to auto renew your membership ?</p>
+	 Yes<input type="radio" name="autoRenew" value="yes" id="autoRenewYes"/></br>
+	 No<input type="radio" name="autoRenew" value="no" id="autoRenewNo"/></br>
+	<input type="submit" value="submit"/>
+  </form>
+
+<!-- SYNTAX Breakdown:
+      <input type="radio" ~  This is a radio button. One has to be checked before submitting
+	  
+	  name="autoRenew" ~ The 'name' attribute serves 2 purposes:
+        1. Both buttons have the same name, because they are in the same 'Group'.	  
+            The group name makes it so that one of the buttons in the group HAS to be checked
+		2. Also, It groups together the user submission on the server side page (.php)
+      
+      value="yes/no" ~ This is the value that will be sent to the server for storage
+
+      id="autoRenewYes/No"/> ~ This is the 'id' so we can reference it 
+	       later in JS with 'document.getElementById'	  
+-->
+
+
+</body>
+</html>
+
+
+
+
+
