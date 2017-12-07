@@ -42,7 +42,10 @@
 	    it will not allow the submission 	 
      The return after onsubmit is necessary to evaluate the true or false from the JS 
 -->
-  
+
+<!-- *** The action page "submitted form data.html" is just a placeholder for example. 
+         This will, when in use, be replaced by a .php for data storage and collection *** -->
+
   <form action="submitted form data.html" method="post" onsubmit="return checkInfo();">
     username: <input type="text" name="username" id="username"/>
 	  password: <input type="password" name="password" id="password"/>
