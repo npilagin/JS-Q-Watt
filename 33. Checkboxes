@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title> JS Form Validation (Check Boxes) </title>
+<script type="text/javascript">
+
+/* Form Validation (Check Boxes) */
+  
+  /* Checkboxes can all be checked, unlike radio buttons, where only one button
+       in a 'name' group can be checked
+  */ 
+
+    /* This function will check if any of the checkboxes are checked. At least 1
+	       box must be checked for the user to move forward.
+	     See SYNTAX from 31-32 for notes on this function, and what it does.
+	  */
+  
+   function isChecked(){
+     var sports =  document.getElementById("sports").checked;
+	   var electronics = document.getElementById("electronics").checked;
+	   var tools = document.getElementById("tools").checked;
+	 
+	  if (sports==false && electronics==false && tools==false){
+	   alert("Select one or more categories");
+	   return false;
+	  }else{
+	   return true;
+	  }   
+   }
+ 
+</script>  
+</head>
+<body>
+
+
+<!-- Please see Radio Button Lessons 31-32 for syntax notes. Syntax is the same except <input type> 
+     Remember that the <form action> page must be able to collect & store the user data. Usually a .php
+-->
+  
+  <form action="submitted form data.html" method="post" onsubmit="return isChecked();">
+    <p>Please select some categories that you are interested in</p>
+	  sports <input type="checkbox" name="interests" value="sports" id="sports"/></br>
+	  electronics <input type="checkbox" name="interests" value="electronics" id="electronics"/></br>
+	  tools <input type="checkbox" name="interests" value="tools" id="tools"/></br>
+	  <input type="submit" value="submit"/>
+  </form>
+
+
+</body>
+</html>
+
+
